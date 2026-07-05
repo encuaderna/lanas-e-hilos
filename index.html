@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanas e Hilos - Portal de Apps</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #2d1b33 0%, #4a1942 50%, #6b2d5e 100%);
+      min-height: 100vh;
+      color: #e0e0e0;
+    }
+    .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+    header { text-align: center; padding: 60px 0 40px; }
+    header h1 {
+      font-size: 3em;
+      color: #f4a7c3;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      margin-bottom: 10px;
+    }
+    header p { font-size: 1.2em; color: #c0a0b0; }
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .app-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .app-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(244,167,195,0.2);
+    }
+    .app-icon { font-size: 3em; margin-bottom: 15px; }
+    .app-card h2 { font-size: 1.5em; color: #fff; margin-bottom: 10px; }
+    .app-card p { color: #c0a0b0; margin-bottom: 20px; font-size: 0.95em; line-height: 1.5; }
+    .btn {
+      display: inline-block;
+      background: #c0608a;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95em;
+      transition: background 0.3s;
+    }
+    .btn:hover { background: #a04070; }
+    footer { text-align: center; padding: 40px 0 20px; color: #906080; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>&#129525; Lanas e Hilos</h1>
+      <p>Selecciona una aplicacion para comenzar</p>
+    </header>
+    <div class="apps-grid">
+
+      <div class="app-card">
+        <div class="app-icon">&#129525;</div>
+        <h2>Teje</h2>
+        <p>Guia practica de telares y tejidos para principiantes. Aprende a fabricar telares y tejer paso a paso.</p>
+        <a href="https://encuaderna.github.io/teje/" class="btn">Abrir Aplicacion</a>
+      </div>
+
+      <div class="app-card">
+        <div class="app-icon">&#9975;&#65039;</div>
+        <h2>Remiendos Faciles</h2>
+        <p>Aprende tecnicas de remiendos y costuras de reparacion para dar nueva vida a tus prendas y telas.</p>
+        <a href="https://encuaderna.github.io/remiendos-f-ciles/" class="btn">Abrir Aplicacion</a>
+      </div>
+
+    </div>
+    <footer>
+      Hecho con entusiasmo por <strong>Artesana Dominguera</strong> &mdash; Apps para quienes aman las labores de aguja
+    </footer>
+  </div>
+</body>
+</html>
